@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="main-order-box">
-            <div class="main-order-form" id="orderForm" [formGroup]="orderFrom" [style.display]="orderId() ? 'none' : null">
+            <div class="main-order-form" id="orderForm" [formGroup]="orderForm" [style.display]="orderId() ? 'none' : null">
                 <div class="main-order-title">Оформление доставки</div>
                 <div class="main-block-info-row">
                     <div class="main-block-title">Контакты</div>
@@ -96,7 +96,7 @@
                 </button>
             </div>
 
-            <div class="main-order-success" id="orderSuccess" [class.is-visible]="orderId">
+            <div class="main-order-success" id="orderSuccess" [class.is-visible]="orderId()">
                 <div class="main-success-icon">✓</div>
                 <div class="main-success-title">Заявка отправлена!</div>
                 <div class="main-success-title">Номер отправления – <span id="orderId">{{orderId()}}</span></div>
